@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ user.first_name }}'s Character</h1>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/logout">Logout!</a>
+
+    <form action = "/character/create" method = "POST">
+        <input type = 'submit' value = "Save">
+        <br>
+        <input type="hidden" name="users_id" value="{{user.id}}">
+        <label>Name:</label>
+            <input type = "text" name = "name" >
+            <br>
+        <label>Ancestry:</label>
+            <input type = "text" name = "ancestry" >
+            <br>
+        <label>Novice Path:</label>
+            <input type = "text" name = "novice_path">
+            <br>
+        <label>Expert Path:</label>
+            <input type = "text" name = "expert_path">
+            <br>
+        <label>Master Path:</label>
+            <input type = "text" name = "master_path">
+            <br>
+        <label>Level</label>
+            <input type = "number" name = "level" >
+            <br>
+        <label>Insanity</label>
+            <input type = "number" name = "insanity" >
+            <br>
+        <label>Corruption</label>
+            <input type = "number" name = "corruption"> 
+            <br>
+        <label>Power</label>
+            <input type = "number" name = "power" >
+            <br>
+        <label>Strength</label>
+            <input type = "number" name = "strength"> 
+            <br>
+        <label>Agility</label>
+            <input type = "number" name = "agility">
+            <br>
+        <label>Intellect</label>
+            <input type = "number" name = "intellect"> 
+            <br>
+        <label>Will</label>
+            <input type = "number" name = "will" >
+            <br>
+        <label>Perception</label>
+            <input type = "number" name = "perception" >
+            <br>
+        <label>Speed</label>
+            <input type = "number" name = "speed" >
+            <br>
+        <label>Size</label>
+            <input type = "text" name = "size" >
+            <br>
+        <label>Health</label>
+            <input type = "number" name = "health" >
+            <br>
+        <label>Armor</label>
+            <input type = "text" name = "armor" >
+            <br>
+        <label>Defense</label>
+            <input type = "number" name = "defense"> 
+            <br>
+        <label>Damage</label>
+            <input type = "number" name = "damage">
+            <br>
+        <label>Healing Rate:</label>
+            <input type = "number" name = "healing_rate">
+            <br>
+        <input type = 'submit' value = "Save">
+
+    </form>
+
+
+</body>
+</html>

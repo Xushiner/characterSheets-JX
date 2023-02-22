@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{ character.user.first_name}}'s Character</h1>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/logout">Logout!</a>
+
+    <h2>Name</h2>
+        <p>{{character.name}}</p>
+    <h2>Ancestry</h2>
+        <p>{{character.ancestry}}</p>
+    <h2>Novice Path</h2>
+        <p>{{character.novice_path}}</p>
+    <h2>Expert Path</h2>
+        <p>{{character.expert_path}}</p>
+    <h2>Master Path</h2>
+        <p>{{character.master_path}}</p>
+    <h2>Level</h2>
+        <p>{{character.level}}</p>
+    <h2>Insanity</h2>
+        <p>{{character.insanity}}</p>
+    <h2>Corruption</h2>
+        <p>{{character.corruption}}</p>
+    <h2>Power</h2>
+        <p>{{character.power}}</p>
+    <h2>Strength</h2>
+        <p>{{character.strength}}</p>
+    <h2>Agility</h2>
+        <p>{{character.agility}}</p>
+    <h2>Intellect</h2>
+        <p>{{character.intellect}}</p>
+    <h2>Will</h2>
+        <p>{{character.will}}</p>
+    <h2>Perception</h2>
+        <p>{{character.perception}}</p>
+    <h2>Speed</h2>
+        <p>{{character.speed}}</p>
+    <h2>Size</h2>
+        <p>{{character.size}}</p>
+    <h2>Health</h2>
+        <p>{{character.health}}</p>
+    <h2>Armor</h2>
+        <p>{{character.armor}}</p>
+    <h2>Defense</h2>
+        <p>{{character.defense}}</p>
+    <h2>Damage</h2>
+        <p>{{character.damage}}</p>
+    <h2>Healing Rate</h2>
+        <p>{{character.healing_rate}}</p>
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+*{
+    padding-left: 10px;
+    background-color: bisque;
+}
+
+/* .register{
+    background-color: gray;
+} */
+
+table, th, tr, td{
+    border:1px solid;
+}
